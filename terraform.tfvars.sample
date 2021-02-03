@@ -1,0 +1,44 @@
+# hcloud Token
+hcloud_token = ""
+
+
+# Resources will be prefixed with this to avoid clashing names
+prefix = "k3stest"
+
+# swapfile GB
+swapsize = 2
+
+# location - nbg1, fsn1 , hel1
+#location = ""
+# datacenter
+datacenter = "nbg1-dc3"
+
+# Instance Type
+instance_image = "debian-10"
+
+# hcloud instance type
+# Master type
+instance_master_type = "cpx11"
+# Agents type
+instance_agents_type = "cpx11"
+# Agents Count
+instance_agents_count = "2"
+
+
+
+#ssh user (you can create ssh key via files/create_ssh_key.sh)
+ssh_key_name= "k3s"
+ssh_user             = "root"
+ssh_public_key_file  = "./data/id_rsa.pub"
+ssh_private_key_file = "./data/id_rsa"
+
+
+
+# # If you are going to use dns module you need to fill these variables up.
+
+# # Email for your Cloudflare account
+# cloudflare_email = "xxx@gmail.com"
+# # Cloudflare token
+# cloudflare_token = ""
+# # Cloudflare zone
+# cloudflare_zone = "akmsoftware.co.uk"
