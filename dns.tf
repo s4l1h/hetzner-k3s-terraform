@@ -1,18 +1,18 @@
-module "dns" {
-  source           = "./dns"
-  cloudflare_email = var.cloudflare_email
-  cloudflare_token = var.cloudflare_token
-  cloudflare_zone  = var.cloudflare_zone
+# module "dns" {
+#   source           = "./dns"
+#   cloudflare_email = var.cloudflare_email
+#   cloudflare_token = var.cloudflare_token
+#   cloudflare_zone  = var.cloudflare_zone
 
-  master                = hcloud_server.master
-  agents                = hcloud_server.agent
-  prefix                = var.prefix
-  instance_agents_count = var.instance_agents_count
-}
+#   master                = hcloud_server.master
+#   agents                = hcloud_server.agent
+#   prefix                = var.prefix
+#   instance_agents_count = var.instance_agents_count
+# }
 
-# Cloudflare
-variable "cloudflare_email" {}
+# # Cloudflare
+# variable "cloudflare_email" {}
 
-variable "cloudflare_token" {}
+# variable "cloudflare_token" {}
 
-variable "cloudflare_zone" {}
+# variable "cloudflare_zone" {}
